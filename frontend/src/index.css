@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6fa;
+  color: #1a1a2e;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+table {
+  background: white;
+}

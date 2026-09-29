@@ -1,0 +1,18 @@
+# Levanta solo MySQL para desarrollo local.
+# Uso: docker compose up -d
+# Luego copia backend/.env.example a backend/.env con DB_HOST=localhost y DB_PORT=3306.
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: miudes-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: miudes
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - miudes_mysql_data:/var/lib/mysql
+
+volumes:
+  miudes_mysql_data:
