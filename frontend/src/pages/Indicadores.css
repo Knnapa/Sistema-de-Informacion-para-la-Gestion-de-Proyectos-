@@ -1,0 +1,153 @@
+.indicadores-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.indicadores-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.indicadores-subtitle {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  color: #777777;
+}
+
+.indicadores-vacio {
+  margin: 0;
+  font-size: 13.5px;
+  color: #898781;
+}
+
+.indicadores-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.indicadores-stat-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(11, 11, 11, 0.06);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.indicadores-stat-label {
+  font-size: 12.5px;
+  color: #777777;
+  font-weight: 600;
+}
+
+.indicadores-stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.indicadores-stat-caption {
+  font-size: 12px;
+  color: #898781;
+}
+
+.indicadores-stat-bar {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: #e9ecf1;
+  overflow: hidden;
+}
+
+.indicadores-stat-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #1d84f3;
+}
+
+.indicadores-grafica-card,
+.indicadores-tabla-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(11, 11, 11, 0.06);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+
+.indicadores-card-title {
+  margin: 0 0 14px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.indicadores-tabla-wrap {
+  overflow-x: auto;
+}
+
+.indicadores-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.indicadores-tabla th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #898781;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e8e8e8;
+  white-space: nowrap;
+}
+
+.indicadores-tabla td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f2f4;
+  color: #333333;
+}
+
+.indicadores-tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.indicadores-td-variables {
+  color: #777777;
+  max-width: 320px;
+}
+
+.indicadores-th-acciones {
+  text-align: right;
+}
+
+.indicadores-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+@media (max-width: 960px) {
+  .indicadores-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .indicadores-header {
+    flex-direction: column;
+  }
+
+  .indicadores-stats {
+    grid-template-columns: 1fr;
+  }
+}

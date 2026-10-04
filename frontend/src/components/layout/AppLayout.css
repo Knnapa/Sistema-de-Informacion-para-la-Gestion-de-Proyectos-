@@ -1,0 +1,27 @@
+.app-shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: #f8f9fc;
+}
+
+/* El shell ocupa exactamente la altura de la pantalla y no se desplaza; el
+   Sidebar (ver Sidebar.css) tampoco se desplaza, y solo el contenedor del
+   contenido principal (.app-shell-content, mas abajo) tiene scroll propio.
+   Asi el boton "Cerrar sesion" del Sidebar queda siempre visible sin
+   importar que tan larga sea la pagina que se este viendo. */
+.app-shell-main {
+  flex: 1;
+  min-width: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-shell-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 28px 32px 44px;
+}

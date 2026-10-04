@@ -1,0 +1,133 @@
+.induccion-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.induccion-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.induccion-subtitle {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  color: #777777;
+}
+
+.induccion-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.induccion-tab {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #555555;
+  cursor: pointer;
+}
+
+.induccion-tab:hover {
+  background: #f1f2f4;
+}
+
+.induccion-tab--active {
+  background: #5a218e;
+  border-color: #5a218e;
+  color: #ffffff;
+}
+
+.induccion-tab--active:hover {
+  background: #4c1b78;
+}
+
+.induccion-vacio {
+  margin: 0;
+  font-size: 13.5px;
+  color: #898781;
+}
+
+.induccion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.material-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(11, 11, 11, 0.06);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.material-card-icono {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.material-card-titulo {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.35;
+}
+
+.material-card-meta {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #898781;
+}
+
+.material-card-acciones {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.material-card-accion {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8f9fc;
+  border: 1px solid #e8e8e8;
+  border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #333333;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+}
+
+.material-card-accion:hover {
+  background: #f1f2f4;
+}
+
+@media (max-width: 560px) {
+  .induccion-header {
+    flex-direction: column;
+  }
+}

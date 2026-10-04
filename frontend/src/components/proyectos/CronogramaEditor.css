@@ -1,0 +1,93 @@
+.cronograma-editor {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 16px 16px 14px;
+  background: #f8f9fc;
+  margin: 4px 0 16px;
+}
+
+.cronograma-editor-label {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.cronograma-editor-subtitulo {
+  margin: 2px 0 14px;
+  font-size: 12px;
+  color: #777777;
+}
+
+.cronograma-editor-filas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.cronograma-editor-fila {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cronograma-editor-titulo {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.cronograma-editor-fecha {
+  flex: 0 0 150px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 12.5px;
+  font-family: inherit;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.cronograma-editor-titulo:focus,
+.cronograma-editor-fecha:focus {
+  outline: none;
+  border-color: #1d84f3;
+}
+
+.cronograma-editor-agregar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cronograma-editor-agregar:hover {
+  border-color: #1d84f3;
+  color: #1d84f3;
+}
+
+@media (max-width: 480px) {
+  .cronograma-editor-fila {
+    flex-wrap: wrap;
+  }
+
+  .cronograma-editor-fecha {
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,160 @@
+.participantes-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.participantes-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.participantes-subtitle {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  color: #777777;
+}
+
+.participantes-buscador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  color: #898781;
+}
+
+.participantes-buscador input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #1a1a2e;
+  background: transparent;
+}
+
+.participantes-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(11, 11, 11, 0.06);
+  padding: 8px 4px;
+  overflow-x: auto;
+}
+
+.participantes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.participantes-table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #898781;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.participantes-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f2f4;
+  color: #333333;
+  vertical-align: middle;
+}
+
+.participantes-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.participantes-fila-clickeable {
+  cursor: pointer;
+}
+
+.participantes-fila-clickeable:hover td {
+  background: #f7f9fc;
+}
+
+.participantes-nombre {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.participantes-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.participantes-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #e7f0fb;
+  color: #1d84f3;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 6px 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.participantes-badge-quitar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #1d84f3;
+  cursor: pointer;
+}
+
+.participantes-badge-quitar:hover {
+  background: rgba(29, 132, 243, 0.18);
+}
+
+.participantes-badge-quitar:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.participantes-th-acciones {
+  text-align: right;
+}
+
+.participantes-acciones {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.participantes-vincular-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.participantes-empty {
+  padding: 32px 16px;
+  text-align: center;
+  color: #898781;
+  font-size: 13.5px;
+}

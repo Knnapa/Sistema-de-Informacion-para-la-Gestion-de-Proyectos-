@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { APP_NAME, APP_SUBTITLE } from '../config/branding';
+import './Login.css';
 
 export default function Login() {
   const [correo, setCorreo] = useState('');
@@ -25,35 +27,55 @@ export default function Login() {
   }
 
   return (
-    <div style={{ maxWidth: 360, margin: '80px auto', fontFamily: 'sans-serif' }}>
-      <h1>MIUDES</h1>
-      <p>Vicerrectoria de Extension - Universidad de Santander</p>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: 12 }}>
-          <label>Correo</label>
-          <input
-            type="email"
-            value={correo}
-            onChange={(e) => setCorreo(e.target.value)}
-            required
-            style={{ width: '100%', padding: 8 }}
-          />
+    <div className="login-page">
+      <div className="login-card">
+        <div className="login-logo">
+          {/* Icono "maletin/proyectos" en SVG, sin dependencias externas */}
+          <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          </svg>
         </div>
-        <div style={{ marginBottom: 12 }}>
-          <label>Contrasena</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            style={{ width: '100%', padding: 8 }}
-          />
-        </div>
-        {error && <p style={{ color: 'crimson' }}>{error}</p>}
-        <button type="submit" disabled={cargando} style={{ width: '100%', padding: 10 }}>
-          {cargando ? 'Ingresando...' : 'Ingresar'}
+
+        <h1 className="login-title">{APP_NAME}</h1>
+        <p className="login-subtitle">{APP_SUBTITLE}</p>
+
+        <form className="login-form" onSubmit={handleSubmit}>
+          <div className="login-field">
+            <label htmlFor="correo">Correo electrónico</label>
+            <input
+              id="correo"
+              type="email"
+              value={correo}
+              onChange={(e) => setCorreo(e.target.value)}
+              required
+              autoComplete="email"
+            />
+          </div>
+
+          <div className="login-field">
+            <label htmlFor="password">Contraseña</label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              autoComplete="current-password"
+            />
+          </div>
+
+          {error && <div className="login-error">{error}</div>}
+
+          <button type="submit" className="login-button" disabled={cargando}>
+            {cargando ? 'Ingresando...' : 'Iniciar Sesión'}
+          </button>
+        </form>
+
+        <button type="button" className="login-forgot" onClick={() => {}}>
+          ¿Olvidaste tu contraseña?
         </button>
-      </form>
+      </div>
     </div>
   );
 }

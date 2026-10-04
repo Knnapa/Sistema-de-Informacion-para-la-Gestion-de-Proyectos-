@@ -1,0 +1,13 @@
+.video-player-cargando {
+  margin: 10px 0;
+  font-size: 13.5px;
+  color: #898781;
+}
+
+.video-player-elemento {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+  background: #000000;
+  display: block;
+}

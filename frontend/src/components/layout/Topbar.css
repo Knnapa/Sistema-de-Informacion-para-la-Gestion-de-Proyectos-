@@ -1,0 +1,42 @@
+.topbar {
+  height: 60px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.topbar-toggle {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.topbar-toggle:hover {
+  background: #f8f9fc;
+}
+
+.topbar-spacer {
+  flex: 1;
+}
+
+.topbar-role-badge {
+  background: #5a218e;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}

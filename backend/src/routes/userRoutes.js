@@ -8,6 +8,9 @@ const {
   actualizar,
   desactivar,
   resetPassword,
+  listarLogs,
+  listarPermisos,
+  actualizarPermisos,
 } = require('../controllers/userController');
 
 const router = express.Router();
@@ -16,10 +19,15 @@ const router = express.Router();
 // (RF-01 a RF-04: el modulo de Administracion es de uso exclusivo del rol Administrador).
 router.use(requireAuth, requireRole('administrador'));
 
+// IMPORTANTE: /logs va antes que cualquier ruta con :id para que Express no
+// la confunda con un id.
+router.get('/logs', asyncHandler(listarLogs));
 router.get('/', asyncHandler(listar));
 router.post('/', asyncHandler(crear));
 router.put('/:id', asyncHandler(actualizar));
 router.put('/:id/desactivar', asyncHandler(desactivar));
 router.put('/:id/reset-password', asyncHandler(resetPassword));
+router.get('/:id/permisos', asyncHandler(listarPermisos));
+router.put('/:id/permisos', asyncHandler(actualizarPermisos));
 
 module.exports = router;

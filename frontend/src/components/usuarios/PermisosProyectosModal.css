@@ -1,0 +1,54 @@
+.permisos-proyectos-hint {
+  margin: 0 0 16px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #777777;
+}
+
+.permisos-proyectos-vacio {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  color: #898781;
+}
+
+.permisos-proyectos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 340px;
+  overflow-y: auto;
+  margin-bottom: 6px;
+}
+
+.permisos-proyectos-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #eef0f3;
+  border-radius: 10px;
+}
+
+.permisos-proyectos-nombre {
+  font-size: 13.5px;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.permisos-proyectos-fila select {
+  border: 1px solid #e8e8e8;
+  border-radius: 9px;
+  padding: 7px 10px;
+  font-size: 12.5px;
+  font-family: inherit;
+  background: #f8f9fc;
+  color: #1a1a2e;
+  flex-shrink: 0;
+}
+
+.permisos-proyectos-fila select:focus {
+  outline: none;
+  border-color: #1d84f3;
+  background: #ffffff;
+}

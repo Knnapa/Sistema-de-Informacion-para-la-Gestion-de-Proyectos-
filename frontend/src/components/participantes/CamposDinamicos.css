@@ -1,0 +1,20 @@
+.campos-dinamicos-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.campos-dinamicos-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.campos-dinamicos-nota {
+  margin: -6px 0 14px;
+  font-size: 11.5px;
+  color: #898781;
+}
